@@ -1,0 +1,86 @@
+.container {
+    margin: 5rem auto;
+    width: 40%;
+    background-color: white;
+    padding: 30px;
+}
+  
+.search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+  
+form {
+    display: flex;
+}
+  
+input {
+    padding: 15px 10px;
+    outline: none;
+    width: 20rem;
+    height: 1rem;
+}
+  
+.li-container {
+    background-color: white;
+    width: 100%;
+    color: darkslategray;
+    margin-top: 20px;
+}
+  
+ul {
+    padding: 0;
+}
+  
+  li {
+    list-style: none;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+}
+  
+li p {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+}
+  
+.btn-delete {
+    margin-left: auto;
+    border: none;
+    background-color: #e31746;
+    color: white;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+    font-size: 14px;
+}
+  
+.btn-delete:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+}
+  
+.btn-add {
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(13, 103, 103);
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+  
+.btn-add:hover {
+    cursor: pointer;
+    background-color: rgb(56, 234, 234);
+}
+  
+.empty {
+    color: rgb(116, 146, 146);
+}
