@@ -1,41 +1,42 @@
-.container {
-    margin: 5rem auto;
-    width: 40%;
-    background-color: white;
-    padding: 30px;
-}
-  
-.search {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-  
-form {
+body { /*fondo de gato jej*/
+    background-image: url(gato.jpg);
     display: flex;
+    font-family: 'Courier New', Courier, monospace;
 }
-  
+
+
+/*aqui es dnd realmente esta la lista*/
+.contenedor {
+    margin: 5rem auto;
+    width: 30%;
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+}
+
 input {
     padding: 15px 10px;
     outline: none;
-    width: 20rem;
+    border: none;
     height: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
 }
   
-.li-container {
+.li-contenedor {
     background-color: white;
-    width: 100%;
-    color: darkslategray;
-    margin-top: 20px;
+    color: rgb(112, 136, 136);
+    margin: 2rem;
 }
   
 ul {
     padding: 0;
 }
   
-  li {
+li {
     list-style: none;
-    background-color: lightgray;
+    background-color: rgb(201, 222, 222);
     border-radius: 10px;
     margin-top: 15px;
     display: flex;
@@ -43,10 +44,10 @@ ul {
   
 li p {
     margin: 0;
-    padding: 15px;
-    width: 100%;
+    padding: 0.4rem 0.7rem;
 }
-  
+
+/*boton de borrar*/
 .btn-delete {
     margin-left: auto;
     border: none;
@@ -56,8 +57,6 @@ li p {
     outline: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 10%;
-    font-size: 14px;
 }
   
 .btn-delete:hover {
@@ -65,22 +64,39 @@ li p {
     background-color: lightseagreen;
 }
   
-.btn-add {
-    padding: 5px 15px;
-    color: white;
-    background-color: rgb(13, 103, 103);
-    font-size: 14px;
-    outline: none;
-    border: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-  
-.btn-add:hover {
-    cursor: pointer;
-    background-color: rgb(56, 234, 234);
-}
-  
-.empty {
+.vacia {
     color: rgb(116, 146, 146);
+}
+
+/*boton de añadir*/
+.btn-add {
+  background-color: #27ae59;
+  border-radius: 15px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  padding: 7px 20px;
+  border: 0;
+}
+
+.btn-add:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+}
+
+/*casi se me olvida que tmb podria usarse en moviles xd*/
+@media (max-width: 780px) {
+   * {
+    font-size: small;
+   }
+   h1 {
+    font-size: large;
+   }
+   li p {
+    width: 10rem;
+    margin: 0;
+   }
+   .contenedor {
+    padding: 1rem;
+    width: 80%;
+   }
 }

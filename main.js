@@ -1,7 +1,7 @@
 const input = document.querySelector("input");
 const addBtn = document.querySelector(".btn-add");
 const ul = document.querySelector("ul");
-const empty = document.querySelector(".empty");
+const empty = document.querySelector(".vacia");
 
 addBtn.addEventListener("click", (e) => {
   e.preventDefault();
